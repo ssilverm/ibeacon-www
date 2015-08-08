@@ -42,22 +42,20 @@ To track iBeacons, you specify regions for the beacons for which you want to get
 
 	// Regions that define which page to show for each beacon.
 	app.beaconRegions =
-[
-	{
-		id: 'Page1',
-		uuid:'E20A39F4-73F5-4BC4-A12F-17D1AD07A961',
-		major: 100,
-		minor: 1
-	},
-	{
-		id: 'Page2',
-		uuid:'E20A39F4-73F5-4BC4-A12F-17D1AD07A961',
-		major: 100,
-		minor: 2
-	},
-
-
-]
+	[
+		{
+			id: 'Page1',
+			uuid:'E20A39F4-73F5-4BC4-A12F-17D1AD07A961',
+			major: 100,
+			minor: 1
+		},
+		{
+			id: 'Page2',
+			uuid:'E20A39F4-73F5-4BC4-A12F-17D1AD07A961',
+			major: 100,
+			minor: 2
+		},
+	]
 
 Note that you need to know the UUID of the beacons you wish to track. Same UIID can be shared by multiple beacons, in which case you can use the major and minor integer numbers to uniquely identify a beacon. It is however not mandatory to specify the major/minor numbers when tracking for beacons.
 
