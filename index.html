@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=yes,
+		initial-scale=1.0" />
+
+	<title>iBeacon Example</title>
+
+	<style>
+	@import 'page.css';
+	</style>
+
+	<script>
+	// Redirect console if running from Evothings Workbench.
+	if (window.hyper) { console.log = hyper.log }
+	</script>
+</head>
+
+<body>
+	<div class="my-page" id="page-default">
+		<div class="my-header">
+			<img class="my-header-image" src="photos/main.png" />.
+			<img class="my-icon-back" src="icon-back.png" ontouchend="history.back()" />
+		</div>
+		<div class="my-content">
+			<h1>Default Page</h1>
+			<p>Please move within range of an iBeacon.</p>
+			<p>You can also edit this page to whatever you want</p>
+		</div>
+	</div>
+
+	<div class="my-page" id="page1">
+		<div class="my-header">
+			<img class="my-header-image" src="photos/pluto.png" />
+			<img class="my-icon-back" src="icon-back.png" ontouchend="history.back()" />
+		</div>
+		<div class="my-content">
+			<h1>Page 1</h1>
+			<p>I am the first page.  When you leave the vacinity of the iBeacon I will go away.</p>
+		</div>
+	</div>
+
+	<div class="my-page" id="page2">
+		<br />
+		<br />
+		<div class="my-header">
+			<img class="my-header-image" src="photos/iss.png" />
+			<img class="my-icon-back" src="icon-back.png" ontouchend="history.back()" />
+		</div>
+		<div class="my-content">
+			<h1>Page 2</h1>
+			<p>I am the second page.  Pretty cool huh?</p>
+		</div>
+	</div>
+
+	
+
+	<script src="lib/jquery.js"></script>
+	<script src="cordova.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
